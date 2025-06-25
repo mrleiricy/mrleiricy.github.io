@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MrLeiricy's WebPage</title>
+<style>
+h1 {
+  color: #111111;
+  text-align: center;
+} 
+body {
+  background-image: url("/home/mrleiricy/Downloads/wp4151519-pokemon-ruby-wallpapers.png");
+}
+</style>
+</head>
+<body>
+
+<h1 style="background-color:DodgerBlue;">My Name MrLeiricy (mrl) and this is my Webpage</h1>
+<p style="background-color:Tomato;">Collin, a 17-year-old with a passion for all things tech, spends countless hours immersed in the world of computers. His fascination goes beyond just using them; he thrives on understanding the intricate workings of hardware and software. Linux operating systems are his particular forte, and he enjoys tinkering with different distributions, customizing his setup, and exploring the command line. When he's not diving deep into the kernel or optimizing his system, Collin unwinds by firing up his favorite games, often finding ways to push the boundaries of gaming on his meticulously configured Linux machine.</p>
+
+</body>
+<body>
+  <canvas id="shrekCanvas" width="400" height="400"></canvas>
+  <script>
+    const canvas = document.getElementById("shrekCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Background
+    ctx.fillStyle = "#cceeff";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Head
+    ctx.beginPath();
+    ctx.arc(200, 200, 80, 0, Math.PI * 2, true);
+    ctx.fillStyle = "#7BB661"; // Shrek green
+    ctx.fill();
+    ctx.stroke();
+
+    // Ears (cylindrical)
+    ctx.fillStyle = "#7BB661";
+    ctx.beginPath();
+    ctx.ellipse(120, 170, 10, 20, 0.5, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.ellipse(280, 170, 10, 20, -0.5, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Eyes
+    ctx.fillStyle = "white";
+    ctx.beginPath();
+    ctx.arc(175, 190, 10, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(225, 190, 10, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Pupils
+    ctx.fillStyle = "black";
+    ctx.beginPath();
+    ctx.arc(175, 190, 4, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(225, 190, 4, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Nose
+    ctx.beginPath();
+    ctx.arc(200, 210, 6, 0, Math.PI * 2);
+    ctx.fillStyle = "#6AA84F";
+    ctx.fill();
+
+    // Mouth
+    ctx.beginPath();
+    ctx.arc(200, 230, 25, 0, Math.PI);
+    ctx.stroke();
+
+    // Eyebrows
+    ctx.beginPath();
+    ctx.moveTo(165, 175);
+    ctx.lineTo(185, 180);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(215, 180);
+    ctx.lineTo(235, 175);
+    ctx.stroke();
+  </script>
+</body>
+</html>
