@@ -1,93 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>MrLeiricy's WebPage</title>
-</head>
-<head><style>
-h1 {
-  color: #111111;
-  text-align: center;
-} 
-body {
-  background-image: url("/home/mrl");
-}
-body {
-  background-color: #15bcf3;
-}
-</style>
+  <meta charset="UTF-8" />
+  <title>MrLeiricy's WebPage</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+    body {
+      background-image: url('images/646221.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      color: hsl(0, 100%, 100%);
+    }
+
+    h1 {
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    p {
+      font-size: 25px;
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.6;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      border-style: outset;
+      border-width: 4px;
+      border-color: #ccc;
+    }
+
+    .video-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    iframe {
+      border-style: outset;
+      border-width: 4px;
+      border-color: #ccc;
+    }
+
+    .resume-frame {
+      display: block;
+      margin: 40px auto;
+      width: 1300px;
+      height: 1000px;
+    }
+  </style>
 </head>
 <body>
 
-<h1>My Name MrLeiricy and this is my Webpage</h1>
-<p style="background-color:Tomato;">Collin, a 17-year-old with a passion for all things tech, spends countless hours immersed in the world of computers. His fascination goes beyond just using them; he thrives on understanding the intricate workings of hardware and software. Linux operating systems are his particular forte, and he enjoys tinkering with different distributions, customizing his setup, and exploring the command line. When he's not diving deep into the kernel or optimizing his system, Collin unwinds by firing up his favorite games, often finding ways to push the boundaries of gaming on his meticulously configured Linux machine.</p>
+  <h1>MrLeiricy's Website!</h1>
 
-</body>
-<body>
-  <canvas id="shrekCanvas" width="400" height="400"></canvas>
-  <script>
-    const canvas = document.getElementById("shrekCanvas");
-    const ctx = canvas.getContext("2d");
+  <p>
+    I'm Collin, a 17-year-old with a serious passion for all things tech. I spend countless hours immersed in the world of computers, and my fascination goes way beyond just using them. I really thrive on understanding the intricate workings of hardware and software. Linux operating systems are my particular forte, and I absolutely love tinkering with different distributions, customizing my setup, and exploring the command line. When I'm not diving deep into the kernel or optimizing my system, I unwind by firing up my favorite games, often finding ways to push the boundaries of gaming on my meticulously configured Linux machine.
+  </p>
 
-    // Background
-    ctx.fillStyle = "#cceeff";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  <h1>Check out my YouTube Channel!!</h1>  
 
-    // Head
-    ctx.beginPath();
-    ctx.arc(200, 200, 80, 0, Math.PI * 2, true);
-    ctx.fillStyle = "#7BB661"; // Shrek green
-    ctx.fill();
-    ctx.stroke();
+  <div class="video-container">
+    <iframe width="1400" height="788"
+            src="https://www.youtube.com/embed/prhUnhmsMX8?start=389"
+            title="YouTube video player"
+            allowfullscreen>
+    </iframe>
+  </div>
 
-    // Ears (cylindrical)
-    ctx.fillStyle = "#7BB661";
-    ctx.beginPath();
-    ctx.ellipse(120, 170, 10, 20, 0.5, 0, Math.PI * 2);
-    ctx.fill();
+<h1>My Resume!!</h1>
 
-    ctx.beginPath();
-    ctx.ellipse(280, 170, 10, 20, -0.5, 0, Math.PI * 2);
-    ctx.fill();
+  <iframe src="images/Main Resume.pdf" class="resume-frame"></iframe>
 
-    // Eyes
-    ctx.fillStyle = "white";
-    ctx.beginPath();
-    ctx.arc(175, 190, 10, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.beginPath();
-    ctx.arc(225, 190, 10, 0, Math.PI * 2);
-    ctx.fill();
-
-    // Pupils
-    ctx.fillStyle = "black";
-    ctx.beginPath();
-    ctx.arc(175, 190, 4, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.beginPath();
-    ctx.arc(225, 190, 4, 0, Math.PI * 2);
-    ctx.fill();
-
-    // Nose
-    ctx.beginPath();
-    ctx.arc(200, 210, 6, 0, Math.PI * 2);
-    ctx.fillStyle = "#6AA84F";
-    ctx.fill();
-
-    // Mouth
-    ctx.beginPath();
-    ctx.arc(200, 230, 25, 0, Math.PI);
-    ctx.stroke();
-
-    // Eyebrows
-    ctx.beginPath();
-    ctx.moveTo(165, 175);
-    ctx.lineTo(185, 180);
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(215, 180);
-    ctx.lineTo(235, 175);
-    ctx.stroke();
-  </script>
 </body>
 </html>
