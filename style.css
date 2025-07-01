@@ -41,7 +41,6 @@ iframe {
   border-style: outset;
   border-width: 4px;
   border-color: #ccc;
-<<<<<<< HEAD
 }
 
 img {
@@ -59,6 +58,4 @@ img {
   display: flex;
   align-items: center; /* optional: aligns vertically */
   gap: 2px;           /* space between text and image */
-=======
->>>>>>> 00e3232ab64426f0e90e38c215f4b905810f9cd5
 }
